@@ -1,0 +1,44 @@
+@use '../abstracts/variables';
+@use '../base/typo';
+
+.btn{
+  font-size: typo.$fs-body;
+  padding: 0.5em 1.125em;
+  border: 1px solid variables.$clr-border;
+  border-radius: variables.$global-border-radius;
+  background-color: variables.$global-btn-background-500;
+  cursor: pointer;
+
+}
+
+.btn-test{
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #fff;
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  border-radius: variables.$global-border-radius;
+  box-shadow: rgb(28 32 93 / 24%) 0 2px 8px 0;
+}
+
+.btn-transparent{
+  backdrop-filter: blur(8px) saturate(100%) contrast(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  background-color: variables.$global-btn-background-400;
+color: variables.$clr-primary-light-600;
+
+}
+
+.btn-download{
+  display: inline-block;
+  background-color: variables.$clr-primary-dark-600;
+  padding: 1em 1.75em;
+  border-radius: variables.$global-border-radius;
+  color: variables.$clr-primary-light-600;
+  margin: 2rem 0;
+}
+
+
+.background{
+  padding: 4rem;
+  background-image: url("https://uploads-ssl.webflow.com/6229ff28081a13ed8a447ccc/639977ebb907a852b6118227_plates-example-03-full-v.jpg");
+}

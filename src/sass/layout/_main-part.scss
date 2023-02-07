@@ -1,0 +1,140 @@
+@use '../base/typo';
+@use '../abstracts/variables';
+
+main{
+  padding-top: 70px;
+  //margin-top: 1.5rem;
+
+  &>section{
+    margin-top: 1.5rem;
+  }
+  @media(min-width: 45em){
+    padding-top: 115px;
+  }
+}
+
+
+
+.section-header .container{
+  text-align: center;
+  .fs-third-heading{
+    font-weight: 300;
+  }
+}
+
+.project-card{
+  //height: 60vh;
+  display: flex;
+  object-fit: cover;
+
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: variables.$global-border-radius;
+  position: relative;
+
+  img{
+    //height: 60vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: variables.$global-border-radius;
+    width: 100%;
+    display: inline-block;
+  }
+  @media (max-width: 40em){
+    img{
+      height: 60vh;
+    }
+  }
+}
+.description-block{
+  position :absolute;
+  display:flex;
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2{
+    margin-top: 70px;
+    padding: 5px 20px 10px;
+  }
+  p{
+    margin-top: .5rem;
+    padding: 5px 20px 10px;
+    max-width: 60ch;
+    margin-inline: auto;
+    font-weight: 300;
+
+    @media(min-width: 35em){
+      font-weight: 400;
+    }
+
+  }
+
+  a{
+    color: inherit
+  }
+
+
+
+}
+
+
+
+
+
+
+
+// typography
+.text-bg-white{
+  h2{
+    border-radius: 5px;
+    background-color: #fff;
+    background-clip: border-box;
+    -webkit-text-fill-color: inherit;
+  }
+  p{
+
+    border-radius: 5px;
+    background-color: #fff;
+    //font-weight: 400;
+    -webkit-text-fill-color: inherit;
+  }
+
+  a{
+    color: inherit
+  }
+
+}
+
+.text-bg-black{
+  color: #fff;
+
+  h2{
+    border-radius: 5px;
+    background-color: #000;
+    background-clip: border-box;
+    -webkit-text-fill-color: inherit;
+  }
+  p{
+
+    border-radius: 5px;
+    background-color: #000;
+    font-weight: 400;
+    -webkit-text-fill-color: inherit;
+  }
+
+  a{
+    color: #000;
+  }
+}
+
+
+.white-text{
+  color: white;
+
+  a{
+    color: black;
+  }
+}
+

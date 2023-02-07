@@ -1,0 +1,123 @@
+@use '../abstracts/variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+$ff-primary: 'Kyiv Type Sans', sans-serif;
+$ff-heading-alt: 'Ubuntu', sans-serif;
+$ff-heading: 'Kyiv Type Sans', sans-serif;
+
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+
+$fs-300: 0.875rem;
+$fs-400: 1rem;
+$fs-500: 1.125rem;
+$fs-550: 1.25rem;
+$fs-600: 1.75rem;
+$fs-700: 2.125rem;
+$fs-800: 3.5rem;
+$fs-900: 3.75rem;
+
+$fs-primary-heading: $fs-700;
+$fs-secondary-heading: $fs-600;
+$fs-third-heading: $fs-550;
+$fs-forth-heading: $fs-500;
+$fs-body: $fs-400;
+$fs-caption: $fs-300;
+
+
+
+.fs-primary-heading {
+  font-family: $ff-heading;
+  font-size: $fs-primary-heading;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.fs-secondary-heading {
+  font-family: $ff-heading;
+  font-size: $fs-secondary-heading;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+
+.fs-third-heading {
+  font-family: $ff-heading;
+  font-weight: $fw-bold;
+  font-size: $fs-third-heading;
+  line-height: 1.1;
+}
+
+.fs-forth-heading{
+  font-family: $ff-heading;
+  font-size: $fs-forth-heading;
+  font-weight: 500;
+
+
+}
+
+.fs-primary-heading, .fs-secondary-heading, .fs-third-heading,.fs-forth-heading{
+  margin: 2rem 0 ;
+}
+
+.fs-body{
+  font-size: $fs-body;
+  line-height: 1.5;
+}
+.caption{
+  font-size: $fs-caption;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.list{
+  list-style: inside;
+}
+
+.link{
+  color: variables.$clr-accent-400;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.header-link{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 3px;
+
+}
+
+@media (min-width: 45em){
+  .fs-primary-heading{
+    font-size: $fs-800;
+  }
+  .fs-secondary-heading{
+    font-size: $fs-700;
+  }
+  .fs-third-heading {
+
+    font-size: $fs-600;
+  }
+
+  .fs-forth-heading{
+    font-size: $fs-500;
+
+  }
+
+  .fs-body, .link, .list{
+    font-size: $fs-500;
+
+  }
+  .caption{
+    font-size: $fs-500;
+
+  }
+
+}

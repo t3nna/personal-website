@@ -1,0 +1,25 @@
+@use 'typo';
+@use '../abstracts/variables';
+
+body{
+  font-family: typo.$ff-primary;
+  background-color: variables.$clr-primary-light-500;
+  color: variables.$clr-primary-dark-500;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: variables.$global-border-radius;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: variables.$global-border-radius;
+
+}

@@ -1,0 +1,93 @@
+@use 'abstracts/variables';
+@use 'base/typo';
+
+.container{
+
+  width: min(variables.$global-max-width, 100% - (variables.$global-padding * 2));
+  margin-inline: auto;
+  display: grid;
+}
+
+.grid{
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.5rem;
+
+  @media (min-width: 45em) {
+    &{
+      grid-template-columns: 1fr 1fr;
+
+      img{
+        height: 350px;
+
+      }
+    }
+  }
+}
+
+.flow > * + *{
+  margin-top: var(--flow-spacer, 1.5rem)
+}
+
+
+.fw-bold {
+  font-weight: typo.$fw-bold;
+}
+.fw-medium{
+  font-weight: typo.$fw-medium;
+}
+
+.fw-light {
+  font-weight: typo.$fw-light;
+}
+
+.fw-regular {
+  font-weight: typo.$fw-regular;
+}
+
+
+
+.fs-300{
+  font-size: typo.$fs-300;
+}
+
+.fs-400 {
+  font-size: typo.$fs-400;
+}
+
+.fs-500 {
+  font-size: typo.$fs-500;
+}
+
+.fs-600 {
+  font-size: typo.$fs-600;
+}
+
+.fs-700 {
+  font-size: typo.$fs-700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+
+.link-accent{
+  color: inherit;
+  text-decoration-color: variables.$clr-primary-dark-400;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-weight: typo.$fw-medium;
+
+  &:hover, &:focus{
+    color: variables.$clr-primary-dark-600;
+  }
+}

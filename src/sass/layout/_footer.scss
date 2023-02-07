@@ -1,0 +1,30 @@
+@use '../abstracts/variables';
+@use '../base/typo';
+
+footer {
+  margin-top: 2rem;
+  background-color: variables.$clr-primary-dark-400;
+  color: variables.$clr-primary-light-500;
+}
+
+.footer-list {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 1rem;
+
+    a {
+      text-decoration-color: variables.$clr-accent-400;
+
+      transition: .2s ease-in-out;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+  }
+}
+
