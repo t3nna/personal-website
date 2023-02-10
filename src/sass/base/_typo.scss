@@ -89,10 +89,16 @@ $fs-caption: $fs-300;
 
 .header-link{
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
   text-decoration-thickness: 3px;
 
 }
+
+.logo{
+  font-size: $fs-forth-heading;
+}
+
+
 
 @media (min-width: 45em){
   .fs-primary-heading{

@@ -38,20 +38,24 @@ function Navigation(props) {
                     <div className="menu-body">
                         <ul>
                             <li>
-                                <a href="#">Projects</a>
+                                <Link to="/blogs">Blog</Link>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <Link to="/about">About</Link>
                             </li>
                             <li>
-                                <a href="#">Tech</a>
+                                <Link to="/setups">Tech</Link>
                             </li>
                             <li>
-                                <a href="#">For You</a>
+                                <Link to="/for-you">For You</Link>
                             </li>
                             <li>
                                 <Link to={'/find-me'}>Find Me</Link>
                             </li>
+                            <li>
+                                <Link to={'/projects'}>Projects</Link>
+                            </li>
+
 
 
                         </ul>
@@ -101,19 +105,22 @@ function Navigation(props) {
                                 <nav className="header-nav">
                                     <ul className='nav'>
                                         <li>
-                                            <a href="#">Projects</a>
+                                            <Link to="/blogs">Blog</Link>
                                         </li>
                                         <li>
-                                            <a href="#">About</a>
+                                            <Link to="/about">About</Link>
                                         </li>
                                         <li>
-                                            <a href="#">Tech</a>
+                                            <Link to="/setups">Tech</Link>
                                         </li>
                                         <li>
-                                            <a href="#">For You</a>
+                                            <Link to="/for-you">For You</Link>
                                         </li>
                                         <li>
-                                            <Link  to={'/find-me'}>Find Me</Link>
+                                            <Link to={'/find-me'}>Find Me</Link>
+                                        </li>
+                                        <li>
+                                            <Link to={'/projects'}>Projects</Link>
                                         </li>
 
                                     </ul>

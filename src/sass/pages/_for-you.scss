@@ -1,0 +1,20 @@
+.film-recommendation-section{
+  h3{
+    margin-top: 0;
+  }
+
+  h3,p{
+    max-width: 40ch;
+  }
+
+  .grid img, .film-desc{
+    align-self: center;
+    justify-self: center;
+  }
+
+  img{
+    max-height: 400px;
+  }
+
+
+}

@@ -1,6 +1,9 @@
 @use '../abstracts/variables';
 @use '../base/typo';
 
+
+
+
 .about-section .grid{
   img{
     //width: 100%;
@@ -12,3 +15,4 @@
     border-radius: variables.$global-border-radius;
   }
 }
+

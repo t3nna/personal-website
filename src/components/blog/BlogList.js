@@ -7,6 +7,7 @@ function BlogList(props) {
         <main className={'flow'}>
             <section className={'blog-section'}>
                 <div className="container">
+                    <h1 className={'fs-secondary-heading'}>Blog</h1>
                     <ul className="blog-items-list grid">
                         <li >
                             <Link to={'/blog'} className={'project-card'}>

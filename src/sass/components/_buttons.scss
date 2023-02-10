@@ -30,11 +30,12 @@ color: variables.$clr-primary-light-600;
 
 .btn-download{
   display: inline-block;
+
   background-color: variables.$clr-primary-dark-600;
   padding: 1em 1.75em;
   border-radius: variables.$global-border-radius;
   color: variables.$clr-primary-light-600;
-  margin: 2rem 0;
+  margin: 2rem auto 2rem;
 }
 
 

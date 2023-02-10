@@ -33,6 +33,12 @@ function About(props) {
                             </p>
                         </div>
                     </div>
+                    <button className="btn btn-download">
+                        <a href="../files/CV.pdf" download>
+
+                        Download CV
+                        </a>
+                    </button>
                 </div>
             </section>
         </main>
