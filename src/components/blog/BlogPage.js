@@ -1,6 +1,9 @@
 import React from 'react';
+import SimpleSlider from "./SimpleSlider";
 
 function BlogPage(props) {
+
+
     return (
         <main className="flow">
             <section className="blog-header">
@@ -131,6 +134,7 @@ function BlogPage(props) {
 
                 </div>
             </section>
+            <SimpleSlider/>
 
             <section className="blog-recommendation">
                 <div className="container">

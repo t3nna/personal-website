@@ -9,7 +9,7 @@ import BlogPage from "./components/blog/BlogPage";
 import BlogList from "./components/blog/BlogList";
 import About from "./components/About";
 import ForYou from "./components/forYou/ForYou";
-import ProjectList from "./components/projects/ProjectList";
+
 
 function App() {
     return (
@@ -47,7 +47,7 @@ function App() {
             <Route path={'/projects'} element={
                 <>
                     <Navigation/>
-                    <ProjectList/>
+                    <BlogList/>
                     <Footer/>
                 </>
             }/>
@@ -55,5 +55,7 @@ function App() {
         </Routes>
     );
 }
+
+//#TODO Slider + Project Page
 
 export default App;
