@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function FindMe(props) {
     return (
@@ -6,40 +7,46 @@ function FindMe(props) {
 
             <header>
                 <img src="/images/meT3nna.jpeg" alt="Ivan - creator" className="author-picture"/>
-                    <h1 className="nick">
-                        @t3nna
-                    </h1>
+                <h1 className="nick">
+                    @t3nna
+                </h1>
             </header>
             <ul className="social-medias">
                 <li>
-                    <a href="https://github.com/t3nna" target="_blank"  rel="noreferrer">
+                    <a href="https://github.com/t3nna" target="_blank" rel="noreferrer">
                         <img src="/icons/icons8-github.svg" alt="github"/>
-                            GitHub
+                        GitHub
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/t3nna/" target="_blank"  rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/t3nna/" target="_blank" rel="noreferrer">
                         <img src="/icons/icons8-linkedin-circled.svg" alt="linkedin"/>
-                            LinkedIn
+                        LinkedIn
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:t3nna1001@gmail.com" target="_blank"  rel="noreferrer">
+                    <a href="mailto:t3nna1001@gmail.com" target="_blank" rel="noreferrer">
                         <img src="/icons/icons8-gmail.svg" alt="home"/>
-                            Email
+                        Email
                     </a>
                 </li>
                 <li>
-                    <a href="https://BeRe.al/t3nnna" target="_blank"  rel="noreferrer">
+                    <a href="https://BeRe.al/t3nnna" target="_blank" rel="noreferrer">
                         <img src="/icons/icons8-bereal.svg" alt="home"/>
-                            BeReal
+                        BeReal
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.tiktok.com/@t3nnna" target="_blank"  rel="noreferrer">
+                    <a href="https://www.tiktok.com/@t3nnna" target="_blank" rel="noreferrer">
                         <img src="/icons/icons8-tiktok.svg" alt="home"/>
-                            TikTok
+                        TikTok
                     </a>
+                </li>
+                <li>
+                    <Link to={'/'}>
+                        <img src="/icons/icons8-opened-folder.svg" alt="home"/>
+                        Website
+                    </Link>
                 </li>
 
             </ul>
@@ -48,7 +55,7 @@ function FindMe(props) {
 
                 <h2>Frequently Asked Questions</h2>
 
-                <div className={'faq-header'} >
+                <div className={'faq-header'}>
                     <svg xmlns="http://www.w3.org/2000/svg">
                         <symbol viewBox="0 0 24 24" id="expand-more">
                             <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>

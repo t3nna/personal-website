@@ -1,8 +1,24 @@
 import React from 'react';
+import {useParams} from "react-router-dom";
+
 import SimpleSlider from "./SimpleSlider";
+import {useBlogInfo} from "../../hooks/useBlogInfo";
+
 
 function BlogPage(props) {
 
+    // get id from url
+    const {id} = useParams()
+
+
+    const {isLoading, data, isError, error} =
+        useBlogInfo(id)
+    if(isLoading){
+        return <h2 className={'fs-secondary-heading'}>Loading...</h2>
+    }
+    if(isError){
+        return <h2 className={'fs-secondary-heading'}>{error.message}</h2>
+    }
 
     return (
         <main className="flow">
@@ -14,11 +30,18 @@ function BlogPage(props) {
                     <p className="caption">Written by t3nna</p>
                 </div>
             </section>
+            {
+                data && (
+            <div dangerouslySetInnerHTML={{__html: data.data.body }}>
+
+            </div>
+                )
+            }
             <section className="blog-section">
                 <div className="container flow">
 
                     <div className="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GhQdlIFylQ8"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1_vDikyLYVE"
                                 title="YouTube video player" frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen></iframe>
@@ -134,7 +157,12 @@ function BlogPage(props) {
 
                 </div>
             </section>
-            <SimpleSlider/>
+            <section className={'slider-section'}>
+                <div className="container">
+                    <SimpleSlider/>
+
+                </div>
+            </section>
 
             <section className="blog-recommendation">
                 <div className="container">

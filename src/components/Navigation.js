@@ -38,7 +38,7 @@ function Navigation(props) {
                     <div className="menu-body">
                         <ul>
                             <li>
-                                <Link to="/blogs">Blog</Link>
+                                <Link to="/blog/all">Blog</Link>
                             </li>
                             <li>
                                 <Link to="/about">About</Link>
@@ -53,7 +53,7 @@ function Navigation(props) {
                                 <Link to={'/find-me'}>Find Me</Link>
                             </li>
                             <li>
-                                <Link to={'/projects'}>Projects</Link>
+                                <Link to={'/project/all'}>Projects</Link>
                             </li>
 
 
@@ -105,7 +105,7 @@ function Navigation(props) {
                                 <nav className="header-nav">
                                     <ul className='nav'>
                                         <li>
-                                            <Link to="/blogs">Blog</Link>
+                                            <Link to="/blog/all">Blog</Link>
                                         </li>
                                         <li>
                                             <Link to="/about">About</Link>
@@ -120,7 +120,7 @@ function Navigation(props) {
                                             <Link to={'/find-me'}>Find Me</Link>
                                         </li>
                                         <li>
-                                            <Link to={'/projects'}>Projects</Link>
+                                            <Link to={'/project/all'}>Projects</Link>
                                         </li>
 
                                     </ul>
