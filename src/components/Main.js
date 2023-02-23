@@ -1,6 +1,19 @@
 import React from 'react';
+import {useFeaturedList} from "../hooks/useFeaturedList";
+import MainItem from "./MainItem";
 
 function Main(props) {
+    const {isLoading, data, isError, error} = useFeaturedList()
+
+    if(isLoading){
+        return <h2 className={'fs-secondary-heading'}>Loading...</h2>
+    }
+    if(isError){
+        return <h2 className={'fs-secondary-heading'}>{error.message}</h2>
+    }
+
+    console.log(data.data)
+
     return (
         <main className="flow">
             <section className="section-header">
@@ -15,6 +28,12 @@ function Main(props) {
             <section>
                 <div className="container">
                     <div className="project-container flow">
+                        {
+                            data.data.map(project => (
+                                <MainItem item={project} key={project.id}/>
+                                )
+                            )
+                        }
                         <div className="project-card">
                             <div className="description-block text-bg-white">
                                 <h2 className="fs-primary-heading">Spotify Stats</h2>
@@ -32,7 +51,7 @@ function Main(props) {
                                 alt="abc"/>
                         </div>
                         <div className="project-card">
-                            <div className="description-block white-text">
+                            <div className="description-block text-white">
                                 <h2 className="fs-primary-heading">Spotify Stats</h2>
                                 <p className="fs-third-heading">
                                     this project is

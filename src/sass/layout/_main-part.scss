@@ -55,14 +55,25 @@ main{
   text-align: center;
 
   h2{
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 5px 20px 10px;
+    max-width: 15ch;
+
+    @media (min-width: 45em){
+      margin-top: 50px;
+    }
+    @media (min-width: 60em){
+      margin-top: 70px;
+    }
+
+
   }
   p{
+
     margin-top: .5rem;
     padding: 5px 20px 10px;
-    max-width: 60ch;
-    margin-inline: auto;
+    max-width: 40ch;
+    margin-inline: 1.5rem;
     font-weight: 300;
 
     @media(min-width: 35em){
@@ -111,14 +122,13 @@ main{
   color: #fff;
 
   h2{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #000;
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
   }
   p{
-
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #000;
     font-weight: 400;
     -webkit-text-fill-color: inherit;
@@ -130,8 +140,9 @@ main{
 }
 
 
-.white-text{
+.text-white{
   color: white;
+
 
   a{
     color: black;

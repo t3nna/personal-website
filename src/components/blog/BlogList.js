@@ -19,7 +19,7 @@ function BlogList(props) {
 
     return (
         <main className={'flow'}>
-            <section className={'blog-section'}>
+            <section className={'blog-list-section'}>
                 <div className="container">
                     <h1 className={'fs-secondary-heading'}>Blog</h1>
                     <ul className="blog-items-list grid">

@@ -18,7 +18,7 @@ function ProjectList(props) {
 
     return (
         <main className={'flow'}>
-            <section className={'project-section'}>
+            <section className={'project-list-section'}>
                 <div className="container">
                     <h1 className={'fs-secondary-heading'}>Projects</h1>
                     <ul className="project-items-list grid">
