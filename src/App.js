@@ -13,6 +13,7 @@ import {QueryClient, QueryClientProvider} from "react-query";
 import {ReactQueryDevtools} from "react-query/devtools";
 import ProjectPage from "./components/projects/ProjectPage";
 import ProjectList from "./components/projects/ProjectList";
+import Tech from "./components/tech/Tech";
 
 const queryClient = new QueryClient()
 
@@ -81,6 +82,8 @@ function App() {
                     </>
                 }/>
 
+                <Route path={'/setup'} element={<Tech/>}/>
+
 
                 <Route path={'*'} element={<h1 className={'fs-primary-heading'}>404</h1>}/>
 
@@ -93,6 +96,5 @@ function App() {
     );
 }
 
-//#TODO Slider + Project Page
 
 export default App;

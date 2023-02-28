@@ -16,6 +16,8 @@ function ProjectPage(props) {
     }
     // console.log(data.data.projecteam)
 
+    const currentDate = new Date(data.data.created)
+
 
     return (
         <main className={'flow'}>
@@ -25,6 +27,13 @@ function ProjectPage(props) {
                         {data.data.name}
                     </h1>
                     <p className={'caption'}>{data.data.description}</p>
+                    <p className={'caption'}>{
+                        currentDate.toLocaleDateString(
+                            undefined,{
+                                dateStyle: 'full',
+                            }
+                        )
+                    }</p>
 
                 </div>
             </section>

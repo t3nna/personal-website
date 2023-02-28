@@ -4,6 +4,10 @@ import {Link} from "react-router-dom";
 function Navigation(props) {
     const [open, setOpen] = useState(false);
 
+    const handleClose = ()=>{
+        setOpen(false)
+    }
+
     return (
         <>
 
@@ -38,22 +42,22 @@ function Navigation(props) {
                     <div className="menu-body">
                         <ul>
                             <li>
-                                <Link to="/blog/all">Blog</Link>
+                                <Link to="/blog/all" onClick={handleClose}>Blog</Link>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <Link to="/about" onClick={handleClose}>About</Link>
                             </li>
                             <li>
-                                <Link to="/setups">Tech</Link>
+                                <Link to="/setup" onClick={handleClose}>Tech</Link>
                             </li>
                             <li>
-                                <Link to="/for-you">For You</Link>
+                                <Link to="/for-you" onClick={handleClose}>For You</Link>
                             </li>
                             <li>
-                                <Link to={'/find-me'}>Find Me</Link>
+                                <Link to={'/find-me'} onClick={handleClose}>Find Me</Link>
                             </li>
                             <li>
-                                <Link to={'/project/all'}>Projects</Link>
+                                <Link to={'/project/all'} onClick={handleClose}>Projects</Link>
                             </li>
 
 
@@ -111,7 +115,7 @@ function Navigation(props) {
                                             <Link to="/about">About</Link>
                                         </li>
                                         <li>
-                                            <Link to="/setups">Tech</Link>
+                                            <Link to="/setup">Tech</Link>
                                         </li>
                                         <li>
                                             <Link to="/for-you">For You</Link>

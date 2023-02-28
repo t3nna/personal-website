@@ -20,10 +20,11 @@ function ForYou(props) {
             <section>
                 <div className="container">
                     <div className="grid grid-video-left">
-                        <div>
-                            <a href="https://www.youtube.com/@Fireship">
-                                <img src="../../images/bg4.jpg" alt=""/>
-                            </a>
+                        <div className="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Zjl2vmy02As"
+                                    title="YouTube video player" frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen></iframe>
                         </div>
                         <div>
                             <h2 className={'fs-secondary-heading'}>
@@ -74,6 +75,50 @@ function ForYou(props) {
                                 Asperiores eligendi laboriosam minus praesentium repellat, sequi. Amet harum itaque
                                 officia quidem similique! Adipisci architecto distinctio hic voluptatibus.
 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={'book-recommendation-section'}>
+                <div className="container">
+                    <h2 className={'fs-secondary-heading header-link'}>
+                        Best Books
+                    </h2>
+                    <div className="grid">
+                        <img
+                            src={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Louis_Fran%C3%A7ais-Dant%C3%A8s_sur_son_rocher.jpg/440px-Louis_Fran%C3%A7ais-Dant%C3%A8s_sur_son_rocher.jpg"}
+                            alt=""/>
+
+                        <div className={'film-desc'}>
+                            <h3 className={'fs-third-heading'}>
+                                The Count of Monte Cristo
+                            </h3>
+                            <p className={'fs-body'}>
+                                The Count of Monte Cristo (French: Le Comte de Monte-Cristo) is an adventure novel
+                                written by French author Alexandre Dumas (père) completed in 1844. It is one of the
+                                author's most popular works, along with The Three Musketeers. Like many of his novels,
+                                it was expanded from plot outlines suggested by his collaborating ghostwriter Auguste
+                                Maquet.</p>
+                        </div>
+                        <img
+                            src={"https://upload.wikimedia.org/wikipedia/en/4/4a/And_Then_There_Were_None_First_Edition_Cover_1939.jpg"}
+                            alt="in Bruges Film"/>
+                        <div className={'film-desc'}>
+                            <h3 className={'fs-third-heading'}>
+                                And Then There Were None
+                            </h3>
+                            <p className="fs-body">
+                                And Then There Were None is a mystery novel by the English writer Agatha Christie,
+                                described by her as the most difficult of her books to write.[2] It was first published
+                                in the United Kingdom by the Collins Crime Club on 6 November 1939, as Ten Little
+                                Niggers,[3] after the children's counting rhyme and minstrel song, which serves as a
+                                major plot element.[4][5] The US edition was released in January 1940 with the title And
+                                Then There Were None, taken from the last five words of the song.[6] Successive American
+                                reprints and adaptations use that title, though Pocket Books paperbacks used the title
+                                Ten Little Indians between 1964 and 1986. UK editions continued to use the original
+                                title until 1985.[7]
                             </p>
                         </div>
                     </div>

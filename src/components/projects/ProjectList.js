@@ -16,6 +16,10 @@ function ProjectList(props) {
         return <h2 className={'fs-secondary-heading'}>{error.message}</h2>
     }
 
+    data?.data.sort((a, b) => {
+      return   new Date(b.created) - new Date(a.created) ;
+    })
+
     return (
         <main className={'flow'}>
             <section className={'project-list-section'}>
