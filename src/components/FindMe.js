@@ -71,7 +71,7 @@ function FindMe(props) {
 
                 <details>
                     <summary>
-                        Does this product have what I need?
+                        How long have you been programming?
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                              className="control-icon control-icon-expand" width="24" height="24">
                             <path fillRule="evenodd"
@@ -87,7 +87,7 @@ function FindMe(props) {
                                   clipRule="evenodd"/>
                         </svg>
                     </summary>
-                    <p>Totally. Totally does.</p>
+                    <p>Since 2019</p>
                 </details>
 
                 <details>
@@ -110,7 +110,6 @@ function FindMe(props) {
                         </svg>
                     </summary>
                     <p>Of course you can, we won't stop you.</p>
-                    <p>Heeeleele</p>
                 </details>
 
                 <details>

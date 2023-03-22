@@ -37,7 +37,7 @@ function ProjectPage(props) {
 
                 </div>
             </section>
-            {data.data.embedVideo && (
+            {data.data.embedVideo!=='' && (
 
                 <section>
                     <div className="container">

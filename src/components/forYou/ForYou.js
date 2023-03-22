@@ -1,6 +1,9 @@
 import React from 'react';
-import girlDragon from '../../images/recommedations/girlWithTheDragonTattoo.png'
+import threeBillboards from '../../images/recommedations/threeBillboards.png'
 import inBruges from './../../images/recommedations/In-Bruges-01.jpg'
+import lockStock from './../../images/recommedations/lockStock.png'
+import fightClub from './../../images/recommedations/fightClub.png'
+
 
 function ForYou(props) {
     return (
@@ -50,17 +53,17 @@ function ForYou(props) {
                         Best Films
                     </h2>
                     <div className="grid">
-                        <img src={girlDragon} alt=""/>
+                        <img src={threeBillboards} alt=""/>
 
                         <div className={'film-desc'}>
                             <h3 className={'fs-third-heading'}>
-                                The Girl with the dragon tattoo
+                                Three Billboards Outside Ebbing, Missouri
                             </h3>
                             <p className={'fs-body'}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ducimus est ex
-                                facilis illum labore qui quo ratione sequi? Ab aliquam asperiores at consectetur
-                                cupiditate debitis delectus deleniti deserunt eaque exercitationem hic ipsam iste,
-                                laboriosam magni nihil perspiciatis qui quo reprehenderit vitae voluptatem voluptatibus.
+                                Three Billboards Outside Ebbing, Missouri is a 2017 crime drama
+                                film written, directed, and co-produced by Martin McDonagh and starring Frances
+                                McDormand as a Missouri woman who rents three roadside billboards to draw attention to
+                                her daughter's unsolved rape and murder.
                             </p>
                         </div>
                         <img src={inBruges} alt="in Bruges Film"/>
@@ -75,6 +78,35 @@ function ForYou(props) {
                                 Asperiores eligendi laboriosam minus praesentium repellat, sequi. Amet harum itaque
                                 officia quidem similique! Adipisci architecto distinctio hic voluptatibus.
 
+                            </p>
+                        </div>
+                        <img src={fightClub} alt="in Bruges Film"/>
+                        <div className={'film-desc'}>
+                            <h3 className={'fs-third-heading'}>
+                                Fight Club
+                            </h3>
+                            <p className="fs-body">
+                                Fight Club is a 1999 American film directed by David Fincher and starring Brad Pitt,
+                                Edward Norton, and Helena Bonham Carter. It is based on the 1996 novel of the same name
+                                by Chuck Palahniuk. Norton plays the unnamed narrator, who is discontented with his
+                                white-collar job. He forms a "fight club" with soap salesman Tyler Durden (Pitt), and
+                                becomes embroiled in a relationship with a mysterious woman, Marla Singer (Bonham
+                                Carter).
+
+                            </p>
+                        </div>
+                        <img src={lockStock} alt="in Bruges Film"/>
+                        <div className={'film-desc'}>
+                            <h3 className={'fs-third-heading'}>
+                                Lock, Stock and Two Smoking Barrels
+                            </h3>
+                            <p className="fs-body">
+                                Lock, Stock and Two Smoking Barrels is a 1998 black comedy crime film written and
+                                directed by Guy Ritchie, produced by Matthew Vaughn.
+                                The story is a heist involving a self-confident young card sharp who loses £500,000 to a
+                                powerful crime lord in a rigged game of three-card brag. To pay off his debts, he and
+                                his friends decide to rob a small-time gang who happen to be operating out of the flat
+                                next door.
                             </p>
                         </div>
                     </div>
@@ -111,17 +143,54 @@ function ForYou(props) {
                             </h3>
                             <p className="fs-body">
                                 And Then There Were None is a mystery novel by the English writer Agatha Christie,
-                                described by her as the most difficult of her books to write.[2] It was first published
+                                described by her as the most difficult of her books to write. It was first published
                                 in the United Kingdom by the Collins Crime Club on 6 November 1939, as Ten Little
-                                Niggers,[3] after the children's counting rhyme and minstrel song, which serves as a
-                                major plot element.[4][5] The US edition was released in January 1940 with the title And
-                                Then There Were None, taken from the last five words of the song.[6] Successive American
+                                Niggers, after the children's counting rhyme and minstrel song, which serves as a
+                                major plot element. The US edition was released in January 1940 with the title And
+                                Then There Were None, taken from the last five words of the song. Successive American
                                 reprints and adaptations use that title, though Pocket Books paperbacks used the title
                                 Ten Little Indians between 1964 and 1986. UK editions continued to use the original
-                                title until 1985.[7]
+                                title until 1985.
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className={'book-recommendation-section'}>
+                <div className="container">
+                    <h2 className={'fs-secondary-heading header-link'}>
+                        Useful articles
+                    </h2>
+                    <ul className="list">
+                        <li>
+                            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#prop-justify-items" className="link">
+                                Grid guide
+                            </a>
+                            &nbsp;- here you can find most useful grid properties with illustrations.
+
+                        </li>
+                        <li>
+                            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" className="link">Flexbox guide</a>
+                            &nbsp;- here you can find most useful flex properties with illustrations.
+                        </li>
+                        <li>
+                            <a href="https://blog.webdevsimplified.com/2022-07/react-router/" className="link">React Router V6</a>
+                            Ultimate React Router v6 Guide
+                            July 25, 2022
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLzKJi2GjpkEHaM3ViS4MfTpzoP5dqYQi1" className="link">
+                                Typography & Design
+                            </a>
+                            &nbsp;- great playlist about typography
+                        </li>
+                    <li>
+                            <a href="https://www.freecodecamp.org/news/event-propagation-event-bubbling-event-catching-beginners-guide/" className="link">
+                                Event Bubbling and Event Catching
+                            </a>
+                            &nbsp;- help you understand event bubbling and event catching like a pro
+                        </li>
+                    </ul>
                 </div>
             </section>
 
