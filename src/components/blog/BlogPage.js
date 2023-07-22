@@ -20,21 +20,33 @@ function BlogPage(props) {
         return <h2 className={'fs-secondary-heading'}>{error.message}</h2>
     }
 
+    const currentDate = new Date(data.data.created)
+
+
     return (
         <main className="flow">
             <section className="blog-header">
                 <div className="container">
                     <h1 className="fs-primary-heading">
-                        How to Use LeetCode Effectively
+                        {data.data.name}
                     </h1>
-                    <p className="caption">Written by t3nna</p>
+                    <p className="caption">{data.data.description}</p>
+                    <p className={'caption'}>{
+                        currentDate.toLocaleDateString(
+                            undefined,{
+                                dateStyle: 'full',
+                            }
+                        )
+                    }</p>
                 </div>
             </section>
             {
                 data && (
-            <div dangerouslySetInnerHTML={{__html: data.data.body }}>
+            <section className={'blog-section'} >
+                <div className="container flow" dangerouslySetInnerHTML={{__html: data.data.body }}>
 
-            </div>
+                </div>
+            </section>
                 )
             }
             <section className="blog-section">

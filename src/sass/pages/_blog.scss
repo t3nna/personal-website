@@ -12,9 +12,19 @@
   p{
     margin-inline:auto;
     max-width: 60ch;
+
   }
   .btn-download{
     justify-self: center;
+  }
+  img{
+    justify-self: center;
+    max-width: 100%;
+    width: 45rem;
+  }
+  .list{
+    max-width: 60ch;
+    margin-inline: auto;
   }
 }
 .blog-recommendation .container{
