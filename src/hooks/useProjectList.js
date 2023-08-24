@@ -1,9 +1,10 @@
 import axios from "axios";
 import {useQuery} from "react-query";
+import {projectsUrl} from "../utils/serverLinks";
 
 
 const fetchProjectList = () =>{
-    return axios.get('http://localhost:3000/api/projects')
+    return axios.get( projectsUrl)
 }
 
 export const useProjectList = (onSuccess, onError) =>{

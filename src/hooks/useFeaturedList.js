@@ -1,9 +1,10 @@
 import {useQuery} from "react-query";
 import axios from "axios";
+import {featuredUrl} from "../utils/serverLinks";
 
 
 const fetchInfo = () =>{
-    return axios.get('http://localhost:3000/api/featured')
+    return axios.get(featuredUrl)
 }
 
 export const useFeaturedList = () =>{

@@ -1,8 +1,9 @@
 import {useQuery} from "react-query";
 import axios from "axios";
+import {blogsUrl} from "../utils/serverLinks";
 
 const fetchInfo = (blogId) =>{
-    return axios.get(`http://localhost:3000/api/blogs/${blogId}`)
+    return axios.get(`${blogsUrl}/${blogId}`)
 }
 
 export const useBlogInfo = (id, interval) =>{
