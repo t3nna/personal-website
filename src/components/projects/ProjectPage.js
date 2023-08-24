@@ -67,19 +67,20 @@ function ProjectPage(props) {
                     <SimpleSlider images={data.data.carousel}/>
                 </div>
             </section>
-            <section className="blog-recommendation">
-                <div className="container">
-                    <h2 className="fs-third-heading">
-                        Related
-                    </h2>
+            {/*<section className="blog-recommendation">*/}
+            {/*    <div className="container">*/}
+            {/*        <h2 className="fs-third-heading">*/}
+            {/*            Related*/}
+            {/*        </h2>*/}
 
-                </div>
-            </section>
+            {/*    </div>*/}
+            {/*</section>*/}
             <section className="project-team-section">
                 <div className="container">
                     <div className="project-team">
 
                         {
+
                             data?.data.projectTeam.map(item => (
                                 <div key={item.name} className="project-team-group">
                                     <h4 className="fs-forth-heading">

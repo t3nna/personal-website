@@ -20,7 +20,7 @@ function SimpleSlider({images}) {
                 images && images.map((image, index) => (
                     <div key={index}>
                         <img src={image} alt=""/>
-                        <h3 className={'fs-body'}>{index}</h3>
+                        <h3 className={'fs-body'}>{index+1}</h3>
                     </div>))
             }
             {/*<div>*/}

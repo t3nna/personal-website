@@ -2,9 +2,10 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 function ListItem({item}) {
+    const linkedSection = item.type.split(' ')
     return (
         <li>
-            <Link to={`/${item.type}/${item.id}`} className={'project-card'}>
+            <Link to={`/${linkedSection[0]}/${item.id}`} className={'project-card'}>
 
                 <div className={`description-block ${item.style}`}>
                     <h2 className="fs-secondary-heading">{item.name}</h2>
