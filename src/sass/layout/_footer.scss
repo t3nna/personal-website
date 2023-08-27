@@ -29,8 +29,8 @@ footer {
 
   .copyright {
     display: block;
-    background-color: variables.$clr-primary-dark-500;
     margin-inline: -1rem;
+    border-top: 2px solid variables.$clr-primary-dark-500;
   }
 }
 
