@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import me from '../images/me.webp'
 
 function FindMe(props) {
     return (
         <main className="find-me-page">
 
             <header>
-                <img src="/images/meT3nna.jpeg" alt="Ivan - creator" className="author-picture"/>
+                <img src={me} alt="Ivan - creator" className="author-picture"/>
                 <h1 className="nick">
                     @t3nna
                 </h1>

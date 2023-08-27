@@ -9,5 +9,6 @@ const fetchInfo = (blogId) =>{
 export const useBlogInfo = (id, interval) =>{
     return useQuery(['blog', id], () =>fetchInfo(id),
         // {refetchInterval: interval}
+
     )
 }
