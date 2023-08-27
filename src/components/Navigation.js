@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 function Navigation(props) {
     const [open, setOpen] = useState(false);
@@ -7,6 +7,11 @@ function Navigation(props) {
     const handleClose = ()=>{
         setOpen(false)
     }
+
+    const navLinkStyles =({isActive})=>
+        isActive ? 'active-tab' : ""
+    const navLinkStylesMob =({isActive})=>
+        isActive ? 'active-tab-mob' : ""
 
     return (
         <>
@@ -42,22 +47,22 @@ function Navigation(props) {
                     <div className="menu-body">
                         <ul>
                             <li>
-                                <Link to="/blog/all" onClick={handleClose}>Blog</Link>
+                                <NavLink to="/blog/all" onClick={handleClose} className={navLinkStylesMob}>Blog</NavLink>
                             </li>
                             <li>
-                                <Link to="/about" onClick={handleClose}>About</Link>
+                                <NavLink to="/about" onClick={handleClose} className={navLinkStylesMob}>About</NavLink>
                             </li>
                             <li>
-                                <Link to="/setup" onClick={handleClose}>Tech</Link>
+                                <NavLink to="/setup" onClick={handleClose} className={navLinkStylesMob}>Tech</NavLink>
                             </li>
                             <li>
-                                <Link to="/for-you" onClick={handleClose}>For You</Link>
+                                <NavLink to="/for-you" onClick={handleClose} className={navLinkStylesMob}>For You</NavLink>
                             </li>
                             <li>
-                                <Link to={'/find-me'} onClick={handleClose}>Find Me</Link>
+                                <NavLink to={'/find-me'} onClick={handleClose} className={navLinkStylesMob}>Find Me</NavLink>
                             </li>
                             <li>
-                                <Link to={'/project/all'} onClick={handleClose}>Projects</Link>
+                                <NavLink to={'/project/all'} onClick={handleClose} className={navLinkStylesMob}>Projects</NavLink>
                             </li>
 
 
@@ -109,22 +114,35 @@ function Navigation(props) {
                                 <nav className="header-nav">
                                     <ul className='nav'>
                                         <li>
-                                            <Link to="/blog/all">Blog</Link>
+                                            <NavLink to="/blog/all"
+                                                className={navLinkStyles}
+                                            >
+                                                Blog</NavLink>
                                         </li>
                                         <li>
-                                            <Link to="/about">About</Link>
+                                            <NavLink to="/about"
+                                                     className={navLinkStyles}
+                                            >About</NavLink>
                                         </li>
                                         <li>
-                                            <Link to="/setup">Tech</Link>
+                                            <NavLink to="/setup"
+                                                     className={navLinkStyles}
+                                            >Tech</NavLink>
                                         </li>
                                         <li>
-                                            <Link to="/for-you">For You</Link>
+                                            <NavLink to="/for-you"
+                                                     className={navLinkStyles}
+                                            >For You</NavLink>
                                         </li>
                                         <li>
-                                            <Link to={'/find-me'}>Find Me</Link>
+                                            <NavLink to={'/find-me'}
+                                                     className={navLinkStyles}
+                                            >Find Me</NavLink>
                                         </li>
                                         <li>
-                                            <Link to={'/project/all'}>Projects</Link>
+                                            <NavLink to={'/project/all'}
+                                                     className={navLinkStyles}
+                                            >Projects</NavLink>
                                         </li>
 
                                     </ul>
