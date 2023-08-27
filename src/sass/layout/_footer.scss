@@ -26,5 +26,11 @@ footer {
       text-underline-offset: 4px;
     }
   }
+
+  .copyright {
+    display: block;
+    background-color: variables.$clr-primary-dark-500;
+    margin-inline: -1rem;
+  }
 }
 

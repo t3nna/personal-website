@@ -82,7 +82,14 @@ function App() {
                     </>
                 }/>
 
-                <Route path={'/setup'} element={<Tech/>}/>
+                <Route path={'/setup'} element={
+                    <>
+                        <Navigation/>
+                        <Tech/>
+                        <Footer/>
+                    </>
+
+                }/>
 
 
                 <Route path={'*'} element={<h1 className={'fs-primary-heading'}>404</h1>}/>
