@@ -1,16 +1,15 @@
-.slider-section .container{
-
+.slider-section .container {
   display: block;
 }
 
-.slider-settings{
+.slider-settings {
   max-width: 47rem;
   margin-inline: auto;
-  img{
+  img {
     aspect-ratio: 16/10;
     object-fit: cover;
   }
-  h3{
+  h3 {
     text-align: center;
   }
 }

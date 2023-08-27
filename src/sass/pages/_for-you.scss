@@ -1,20 +1,21 @@
-.film-recommendation-section, .book-recommendation-section{
-  h3{
+.film-recommendation-section,
+.book-recommendation-section {
+  h3 {
     margin-top: 0;
   }
 
-  h3,p{
+  h3,
+  p {
     max-width: 40ch;
   }
 
-  .grid img, .film-desc{
+  .grid img,
+  .film-desc {
     align-self: center;
     justify-self: center;
   }
 
-  img{
+  img {
     max-height: 400px;
   }
-
-
 }

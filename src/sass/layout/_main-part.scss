@@ -1,28 +1,26 @@
-@use '../base/typo';
-@use '../abstracts/variables';
+@use "../base/typo";
+@use "../abstracts/variables";
 
-main{
+main {
   padding-top: 70px;
   //margin-top: 1.5rem;
 
-  &>section{
+  & > section {
     margin-top: 1.5rem;
   }
-  @media(min-width: 45em){
+  @media (min-width: 45em) {
     padding-top: 115px;
   }
 }
 
-
-
-.section-header .container{
+.section-header .container {
   text-align: center;
-  .fs-third-heading{
+  .fs-third-heading {
     font-weight: 300;
   }
 }
 
-.project-card{
+.project-card {
   //height: 60vh;
   display: flex;
   object-fit: cover;
@@ -32,7 +30,7 @@ main{
   border-radius: variables.$global-border-radius;
   position: relative;
 
-  img{
+  img {
     //height: 60vh;
     object-fit: cover;
     object-position: 50% 50%;
@@ -40,112 +38,94 @@ main{
     width: 100%;
     display: inline-block;
   }
-  @media (max-width: 40em){
-    img{
+  @media (max-width: 40em) {
+    img {
       height: 60vh;
     }
   }
 }
-.description-block{
-  position :absolute;
-  display:flex;
+.description-block {
+  position: absolute;
+  display: flex;
   flex-grow: 0;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
-  h2{
+  h2 {
     margin-top: 30px;
     padding: 5px 20px 10px;
     max-width: 15ch;
 
-    @media (min-width: 45em){
+    @media (min-width: 45em) {
       margin-top: 50px;
     }
-    @media (min-width: 60em){
+    @media (min-width: 60em) {
       margin-top: 70px;
     }
-
-
   }
-  p{
-
-    margin-top: .5rem;
+  p {
+    margin-top: 0.5rem;
     padding: 5px 20px 10px;
     max-width: 40ch;
     margin-inline: 1.5rem;
     font-weight: 300;
 
-    @media(min-width: 35em){
+    @media (min-width: 35em) {
       font-weight: 400;
     }
-
   }
 
-  a{
-    color: inherit
+  a {
+    color: inherit;
   }
-
-
-
 }
 
-
-
-
-
-
-
 // typography
-.text-bg-white{
-  h2{
+.text-bg-white {
+  h2 {
     border-radius: 5px;
     background-color: #fff;
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
   }
-  p{
-
+  p {
     border-radius: 5px;
     background-color: #fff;
     //font-weight: 400;
     -webkit-text-fill-color: inherit;
   }
 
-  a{
-    color: inherit
+  a {
+    color: inherit;
   }
-
 }
 
-.text-bg-black{
+.text-bg-black {
   color: #fff;
 
-  h2{
+  h2 {
     border-radius: 10px;
     background-color: #000;
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
   }
-  p{
+  p {
     border-radius: 8px;
     background-color: #000;
     font-weight: 400;
     -webkit-text-fill-color: inherit;
   }
 
-  a{
+  a {
     color: #000;
   }
 }
 
-
-.text-white{
+.text-white {
   color: white;
 
-
-  a{
+  a {
     color: black;
   }
 }
-

@@ -1,37 +1,34 @@
-import React from 'react';
-import {useProjectList} from "../../hooks/useProjectList";
+import React from "react";
+import { useProjectList } from "../../hooks/useProjectList";
 import ListItem from "../ListItem";
 
 function ProjectList(props) {
-    const onSuccess = data => {
-        console.log(data.data)
-    }
+  const onSuccess = (data) => {
+    console.log(data.data);
+  };
 
-    const {isLoading, data, isError, error} =
-        useProjectList(onSuccess)
-    if(isLoading){
-        return <h2 className={'fs-secondary-heading'}>Loading...</h2>
-    }
-    if(isError){
-        return <h2 className={'fs-secondary-heading'}>{error.message}</h2>
-    }
+  const { isLoading, data, isError, error } = useProjectList(onSuccess);
+  if (isLoading) {
+    return <h2 className={"fs-secondary-heading"}>Loading...</h2>;
+  }
+  if (isError) {
+    return <h2 className={"fs-secondary-heading"}>{error.message}</h2>;
+  }
 
-    data?.data.sort((a, b) => {
-      return   new Date(b.created) - new Date(a.created) ;
-    })
+  data?.data.sort((a, b) => {
+    return new Date(b.created) - new Date(a.created);
+  });
 
-    return (
-        <main className={'flow'}>
-            <section className={'project-list-section'}>
-                <div className="container">
-                    <h1 className={'fs-secondary-heading'}>Projects</h1>
-                    <ul className="project-items-list grid">
-                        {
-                            data?.data.map(blog =>(
-                                <ListItem key={blog.id} item={blog} />
-                            ))
-                        }
-                        {/*<li>
+  return (
+    <main className={"flow"}>
+      <section className={"project-list-section"}>
+        <div className="container">
+          <h1 className={"fs-secondary-heading"}>Projects</h1>
+          <ul className="project-items-list grid">
+            {data?.data.map((blog) => (
+              <ListItem key={blog.id} item={blog} />
+            ))}
+            {/*<li>
                             <Link to={'/blog'} className={'project-card'}>
 
                                 <div className="description-block white-text">
@@ -77,12 +74,11 @@ function ProjectList(props) {
                                 src="https://uploads-ssl.webflow.com/6229ff28081a13ed8a447ccc/622a0b4bcb413cfc53a4a0c2_____1_-__2.jpg"
                                 alt="abc"/>
                         </li>*/}
-
-                    </ul>
-                </div>
-            </section>
-        </main>
-    );
+          </ul>
+        </div>
+      </section>
+    </main>
+  );
 }
 
 export default ProjectList;

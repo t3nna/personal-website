@@ -1,13 +1,8 @@
-@import "abstracts/variables",
-"abstracts/fonts";
+@import "abstracts/variables", "abstracts/fonts";
 
-@import "base/reset",
-"base/typo",
-"base/base",
-"base/theme";
+@import "base/reset", "base/typo", "base/base", "base/theme";
 
-@import "components/buttons",
-"components/path-navigation";
+@import "components/buttons", "components/path-navigation";
 
 @import "layout/navigation";
 @import "layout/main-part";
@@ -16,13 +11,7 @@
 @import "layout/faq";
 @import "layout/slider";
 
-@import "pages/home",
-"pages/blog",
-"pages/blog-alt",
-"pages/find-me",
-"pages/blog-list",
-"pages/about",
-"pages/for-you",
-"pages/tech";
+@import "pages/home", "pages/blog", "pages/blog-alt", "pages/find-me",
+  "pages/blog-list", "pages/about", "pages/for-you", "pages/tech";
 
 @import "./utilities";

@@ -8,7 +8,6 @@
   }
 
   img {
-
   }
 
   a {
@@ -17,7 +16,7 @@
   }
 
   @media (min-width: 35em) {
-    &{
+    & {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }

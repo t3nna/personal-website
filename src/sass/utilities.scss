@@ -1,9 +1,11 @@
-@use 'abstracts/variables';
-@use 'base/typo';
+@use "abstracts/variables";
+@use "base/typo";
 
 .container {
-
-  width: min(variables.$global-max-width, 100% - (variables.$global-padding * 2));
+  width: min(
+    variables.$global-max-width,
+    100% - (variables.$global-padding * 2)
+  );
   margin-inline: auto;
   display: grid;
 }
@@ -13,16 +15,12 @@
   grid-column-gap: 1rem;
   grid-row-gap: 1.5rem;
 
-
-
-
   @media (min-width: 45em) {
     & {
       grid-template-columns: 1fr 1fr;
 
       img {
         height: 350px;
-
       }
     }
   }
@@ -41,16 +39,12 @@
         border-radius: variables.$global-border-radius;
       }
     }
-
   }
 }
 
-
-
 .flow > * + * {
-  margin-top: var(--flow-spacer, 1.5rem)
+  margin-top: var(--flow-spacer, 1.5rem);
 }
-
 
 .fw-bold {
   font-weight: typo.$fw-bold;
@@ -67,7 +61,6 @@
 .fw-regular {
   font-weight: typo.$fw-regular;
 }
-
 
 .fs-300 {
   font-size: typo.$fs-300;
@@ -101,7 +94,6 @@
   border: 0;
 }
 
-
 .link-accent {
   color: inherit;
   text-decoration-color: variables.$clr-primary-dark-400;
@@ -109,7 +101,8 @@
   text-underline-offset: 4px;
   font-weight: typo.$fw-medium;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: variables.$clr-primary-dark-600;
   }
 }

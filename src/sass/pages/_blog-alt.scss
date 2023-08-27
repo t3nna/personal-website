@@ -1,7 +1,9 @@
-@use '../base/typo';
-@use '../abstracts/variables';
+@use "../base/typo";
+@use "../abstracts/variables";
 
-$border-shadow: 5px 5px 0 -2px wheat, 5px 5px 0 1px black;
+$border-shadow:
+  5px 5px 0 -2px wheat,
+  5px 5px 0 1px black;
 $border: 3px solid black;
 .blog-header {
   text-align: center;
@@ -14,11 +16,9 @@ $border: 3px solid black;
   border-radius: 0;
   box-shadow: $border-shadow;
   padding: 1rem;
-
 }
 
 .blog-section-alt {
-
   .btn-internal-nav {
     max-width: 40rem;
     width: 100%;
@@ -28,15 +28,14 @@ $border: 3px solid black;
     color: variables.$clr-primary-light-500;
     border-radius: 0;
     box-shadow: $border-shadow;
-    &:hover{
+    &:hover {
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: 4px;
     }
   }
-
 }
-.details{
+.details {
   margin-top: 1rem;
 }
 
@@ -44,7 +43,7 @@ $border: 3px solid black;
   h2 {
     text-align: center;
   }
-  h3{
+  h3 {
     text-align: center;
   }
 
@@ -68,9 +67,7 @@ $border: 3px solid black;
     max-width: 100%;
     width: 40rem;
     margin-inline: auto;
-
   }
-
 }
 
 // imgs grids
@@ -79,7 +76,6 @@ $border: 3px solid black;
   flex-wrap: wrap;
   gap: 1rem;
 
-
   > * {
     flex: 1 1 40%;
   }
@@ -87,7 +83,6 @@ $border: 3px solid black;
   img {
     max-width: 100%;
   }
-
 }
 
 .img-collage-mix {
@@ -97,8 +92,8 @@ $border: 3px solid black;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-  "left-top right-top"
-  "bottom bottom";
+    "left-top right-top"
+    "bottom bottom";
   gap: 1rem;
 
   img {
@@ -116,15 +111,13 @@ $border: 3px solid black;
   flex-wrap: wrap;
   gap: 1rem;
 
-
   > * {
     flex: 1 1 15rem;
-    img{
+    img {
       aspect-ratio: 3/4;
       object-fit: cover;
       object-position: center;
     }
-
   }
 }
 
@@ -140,12 +133,11 @@ $border: 3px solid black;
     object-fit: cover;
     aspect-ratio: 1/1;
   }
-
 }
-.img-collage-equal{
+.img-collage-equal {
   display: flex;
   gap: 1rem;
-  > *{
+  > * {
     flex: 1 1 100rem;
   }
 }

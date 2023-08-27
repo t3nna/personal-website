@@ -1,14 +1,15 @@
-import {useQuery} from "react-query";
+import { useQuery } from "react-query";
 import axios from "axios";
-import {blogsUrl} from "../utils/serverLinks";
+import { blogsUrl } from "../utils/serverLinks";
 
-const fetchInfo = (blogId) =>{
-    return axios.get(`${blogsUrl}/${blogId}`)
-}
+const fetchInfo = (blogId) => {
+  return axios.get(`${blogsUrl}/${blogId}`);
+};
 
-export const useBlogInfo = (id, interval) =>{
-    return useQuery(['blog', id], () =>fetchInfo(id),
-        // {refetchInterval: interval}
-
-    )
-}
+export const useBlogInfo = (id, interval) => {
+  return useQuery(
+    ["blog", id],
+    () => fetchInfo(id),
+    // {refetchInterval: interval}
+  );
+};

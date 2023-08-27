@@ -1,7 +1,7 @@
-@use '../abstracts/variables';
-@use '../base/typo';
+@use "../abstracts/variables";
+@use "../base/typo";
 
-.find-me-page{
+.find-me-page {
   background: url("/images/bg2.jpg") no-repeat center center fixed;
   background-size: cover;
   /*position: relative;*/
@@ -9,7 +9,7 @@
   min-height: 100vh;
 }
 
-video{
+video {
   z-index: 0;
   position: absolute;
   left: 0;
@@ -18,7 +18,7 @@ video{
   object-fit: cover;
 }
 
-#vanta{
+#vanta {
   z-index: 0;
   position: absolute;
   left: 0;
@@ -27,7 +27,7 @@ video{
   height: 100%;
 }
 
-main{
+main {
   position: relative;
   /*opacity: 0;*/
   /*filter: blur(10px);*/
@@ -35,8 +35,6 @@ main{
 }
 
 .find-me-page {
-
-
   header {
     margin-top: 1rem;
     text-align: center;
@@ -44,14 +42,11 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-
-
   }
 
   h1 {
     color: #ffffff;
   }
-
 
   .author-picture {
     width: 8em;
@@ -61,7 +56,6 @@ main{
     border-radius: 100%;
     border: 1px solid variables.$clr-border;
     box-shadow: rgb(28 32 93 / 34%) 0 2px 80px 0;
-
   }
 
   .nick {
@@ -83,8 +77,6 @@ main{
     margin: 0 auto;
     padding: 2em;
     max-width: 480px;
-
-
   }
 
   .social-medias li {
@@ -96,11 +88,9 @@ main{
     margin: 1.4em 0;
     border: 1px solid variables.$clr-border;
     box-shadow: rgb(28 32 93 / 24%) 0 2px 8px 0;
-
-
   }
 
-  .social-medias  a {
+  .social-medias a {
     display: flex;
     flex-direction: row;
     justify-content: center;

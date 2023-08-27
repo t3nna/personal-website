@@ -1,18 +1,15 @@
-@use '../abstracts/variables';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@use "../abstracts/variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-
-$ff-primary: 'Kyiv Type Sans', sans-serif;
-$ff-heading-alt: 'Ubuntu', sans-serif;
-$ff-heading: 'Kyiv Type Sans', sans-serif;
-
+$ff-primary: "Kyiv Type Sans", sans-serif;
+$ff-heading-alt: "Ubuntu", sans-serif;
+$ff-heading: "Kyiv Type Sans", sans-serif;
 
 $fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 $fw-black: 900;
-
 
 $fs-300: 0.875rem;
 $fs-400: 1rem;
@@ -30,8 +27,6 @@ $fs-forth-heading: $fs-500;
 $fs-body: $fs-400;
 $fs-caption: $fs-300;
 
-
-
 .fs-primary-heading {
   font-family: $ff-heading;
   font-size: $fs-primary-heading;
@@ -46,7 +41,6 @@ $fs-caption: $fs-300;
   line-height: 1.1;
 }
 
-
 .fs-third-heading {
   font-family: $ff-heading;
   font-weight: $fw-bold;
@@ -54,77 +48,71 @@ $fs-caption: $fs-300;
   line-height: 1.1;
 }
 
-.fs-forth-heading{
+.fs-forth-heading {
   font-family: $ff-heading;
   font-size: $fs-forth-heading;
   font-weight: 500;
-
-
 }
 
-.fs-primary-heading, .fs-secondary-heading, .fs-third-heading,.fs-forth-heading{
-  margin: 2rem 0 ;
+.fs-primary-heading,
+.fs-secondary-heading,
+.fs-third-heading,
+.fs-forth-heading {
+  margin: 2rem 0;
 }
 
-.fs-body{
+.fs-body {
   font-size: $fs-body;
   line-height: 1.5;
 }
-.caption{
+.caption {
   font-size: $fs-caption;
   line-height: 1.5;
   font-weight: 300;
 }
 
-.list{
+.list {
   list-style: inside;
-
 }
 
-.link{
+.link {
   color: variables.$clr-accent-400;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
 
-.header-link{
+.header-link {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
-
 }
 
-.logo{
+.logo {
   font-size: $fs-forth-heading;
 }
 
-
-
-@media (min-width: 45em){
-  .fs-primary-heading{
+@media (min-width: 45em) {
+  .fs-primary-heading {
     font-size: $fs-800;
   }
-  .fs-secondary-heading{
+  .fs-secondary-heading {
     font-size: $fs-700;
   }
   .fs-third-heading {
-
     font-size: $fs-600;
   }
 
-  .fs-forth-heading{
+  .fs-forth-heading {
     font-size: $fs-500;
-
   }
 
-  .fs-body, .link, .list{
+  .fs-body,
+  .link,
+  .list {
     font-size: $fs-500;
-
   }
-  .caption{
+  .caption {
     font-size: $fs-500;
-
   }
-
 }
